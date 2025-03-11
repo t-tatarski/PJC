@@ -1,7 +1,28 @@
 #include <Adafruit_LiquidCrystal.h>
 
 // C++ code
-// LDC library
+// LDC library methodes
+/*
+begin	KEYWORD2
+clear	KEYWORD2
+home	KEYWORD2
+print	KEYWORD2
+setCursor	KEYWORD2
+cursor	KEYWORD2
+noCursor	KEYWORD2
+blink	KEYWORD2
+noBlink	KEYWORD2
+display	KEYWORD2
+noDisplay	KEYWORD2
+autoscroll	KEYWORD2
+noAutoscroll	KEYWORD2
+leftToRight	KEYWORD2
+rightToLeft	KEYWORD2
+scrollDisplayLeft	KEYWORD2
+scrollDisplayRight	KEYWORD2
+createChar	KEYWORD2
+setBacklight	KEYWORD2
+  */
 Adafruit_LiquidCrystal lcd1(0);
 void setup()
 {
@@ -19,6 +40,8 @@ void setup()
   lcd1.setCursor(1,0);
   //migajacy kursor
   lcd1.blink();
+  delay(3000);
+  lcd1.noBlink();
 }
 
 void loop()
